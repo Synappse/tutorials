@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MUm-Ld-g4t">
+                                <rect key="frame" x="0.0" y="367" width="375" height="300"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UNb-gi-tby">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                    </imageView>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="akJ-HN-ksU">
+                                        <rect key="frame" x="177.5" y="140" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="akJ-HN-ksU" firstAttribute="centerY" secondItem="MUm-Ld-g4t" secondAttribute="centerY" id="5Z0-mR-dWr"/>
+                                    <constraint firstItem="UNb-gi-tby" firstAttribute="top" secondItem="MUm-Ld-g4t" secondAttribute="top" id="MLm-da-7z2"/>
+                                    <constraint firstItem="UNb-gi-tby" firstAttribute="leading" secondItem="MUm-Ld-g4t" secondAttribute="leading" id="UAk-eu-hzY"/>
+                                    <constraint firstItem="akJ-HN-ksU" firstAttribute="centerX" secondItem="MUm-Ld-g4t" secondAttribute="centerX" id="dA5-gG-rGW"/>
+                                    <constraint firstAttribute="bottom" secondItem="UNb-gi-tby" secondAttribute="bottom" id="nwE-1L-wgM"/>
+                                    <constraint firstAttribute="trailing" secondItem="UNb-gi-tby" secondAttribute="trailing" id="oCj-gN-cRF"/>
+                                    <constraint firstAttribute="height" constant="300" id="tHd-9F-ZPk"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map snapshot" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T41-lG-GjS">
+                                <rect key="frame" x="20" y="40" width="335" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ICv-Mw-Itr">
+                                <rect key="frame" x="40" y="307" width="295" height="40"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Td6-dz-U4M"/>
+                                </constraints>
+                                <state key="normal" title="Load"/>
+                                <connections>
+                                    <action selector="didTapLoadButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsW-7V-GXk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MUm-Ld-g4t" firstAttribute="top" secondItem="ICv-Mw-Itr" secondAttribute="bottom" constant="20" id="2SQ-lE-7VB"/>
+                            <constraint firstItem="T41-lG-GjS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="4cR-kM-0zH"/>
+                            <constraint firstItem="ICv-Mw-Itr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="HmL-Xd-Ull"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T41-lG-GjS" secondAttribute="trailing" constant="20" id="JFg-yk-gta"/>
+                            <constraint firstItem="T41-lG-GjS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WKZ-9I-2UF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ICv-Mw-Itr" secondAttribute="trailing" constant="40" id="bYR-PH-lTJ"/>
+                            <constraint firstItem="MUm-Ld-g4t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="deW-U7-ZgK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MUm-Ld-g4t" secondAttribute="bottom" id="k9H-n1-bsK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MUm-Ld-g4t" secondAttribute="trailing" id="pIC-Ir-pdr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="akJ-HN-ksU" id="3Y8-Xd-Tv9"/>
+                        <outlet property="mapPreviewImageView" destination="UNb-gi-tby" id="vPq-tX-rMj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
